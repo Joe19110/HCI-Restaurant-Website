@@ -1,0 +1,163 @@
+body {
+  font-family: Fredoka;
+  background-color: white; 
+  margin: 0px;
+  font-size: large;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex; 
+  background-color: white; 
+  width: 100%; 
+  height: fit-content; 
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color:#fcdc64;
+}
+
+.nav-tab {
+  display: inline-block;
+  padding: 10% 20px;
+  font-size: max(1.3vw, 12px);
+}
+
+#contact-button {
+  float: right;
+  border-radius: 25px;
+  background: #547159;
+  padding: 5% 0px 7.5% 0px;
+  width: max(30%, 15vw);
+  height: 10px;
+  text-align: center;
+  color: white;
+  font-size: max(1.2vw, 10px);
+}
+
+#banner {
+  background: white;
+  display: flex;
+  height: fit-content;
+}
+
+#circle {
+  width: 40%;
+  height: 40vw;
+  transform: translate(-50%, 1%);
+  background-color: #547159;
+  border-radius: 50%;
+}
+
+#title {
+  font-size: 8.6vw;
+  font-family: Roxborough;
+}
+
+#hangul-text {
+  padding-left: 5%;
+  font-family: Jua;
+  transform: translate(-50%, 4vw);
+  font-size: 4.8vw;
+  font-weight: lighter;
+}
+
+#menu-button {
+  border-radius: 25px;
+  background: #fcdc64;
+  padding: 5% 0px 5% 0px;
+  width: max(40%, 15vw);
+  text-align: center;
+  font-size: max(1.2vw, 10px);
+}
+
+#about-title {
+  font-size: 6vw;
+  text-align: center;
+  font-family: Roxborough;
+}
+
+#about-container {
+	display: flex;
+  text-align: center;
+}
+
+.about-pictures {
+	width: max(70%, 80px);
+	margin-bottom: 7%;
+  border-radius: 50%;
+  box-shadow: 1vw 1vw #fcdc64;
+}
+
+.captions {
+	font-size: max(1vw, 7px);
+}
+
+.caption-headings {
+  font-family: Roxborough;
+  font-size: max(1.7vw, 8.2px);
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  font-size: max(0.9vw, 7px);
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 2vw;
+  bottom: 1px;
+  vertical-align: middle;
+  position: relative;
+}
+@font-face {
+  font-family: Fredoka;
+  src: url(fonts/Fredoka.ttf);
+}
+
+@font-face {
+  font-family: Jua;
+  src: url(fonts/Jua.ttf);
+}
+
+@font-face {
+  font-family: Roxborough;
+  src: url(fonts/Roxborough.ttf);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

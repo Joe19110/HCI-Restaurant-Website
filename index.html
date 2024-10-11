@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Essel JKT</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <!-- logo V -->
+            <div style="width: 20%; height: 10vw;"><img src="images/logo.webp" style="height: 100%;"></div>
+            <!-- navigation bar V -->
+            <nav style="width: 60%; display: flex; justify-content: center; align-items: center;">
+                <ul>
+                    <li class="nav-tab" style="text-decoration: underline; text-decoration-color: #0c542c;">Home</li>
+                    <li class="nav-tab"><a href="#about-title">About</a></li>
+                    <li class="nav-tab"><a href="menu.html">Menu</a></li>               
+                </ul>
+            </nav>
+            <!-- contact button V -->
+            <div style="width: 20%; align-content: center; justify-content: right; padding-right: 1%;">
+                <a href="https://api.whatsapp.com/send/?phone=6282299007409&text&type=phone_number&app_absent=0">
+                    <div id="contact-button">Contact Us</div>
+                </a>
+            </div>
+        </header>
+
+        <div id="banner">
+            <!-- decorative circle V -->
+            <div id="circle">
+                <div style="transform: translate(85%, 0%);">
+                    <p id="title"> Essel <br/> JKT </p>
+                </div>
+            </div>
+            <!-- korean vertical text V -->
+            <p id="hangul-text"> 애 <br/> 셀 <br/> 트 <br/> 리 </p>
+            <div style="padding: 10% 0px 0px 0px; flex: 1;">
+                <p style="font-size: max(1.3vw, 8.2px); margin-bottom: 0px;"> 
+                    Lorem ipsum dolor sit amet, cons
+                    <br/>
+                    consectetur adipiscing elit. 
+                    <br/><br/>
+                    Nunc risus augue, tempus ut cons
+                    <br/>
+                    sagittis sed, fauci 
+                </p>
+                <!-- menu button V -->
+                <div style="padding-top: 5%;">
+                    <a href="menu.html">
+                        <div id="menu-button">See Menu</div>
+                    </a>
+                </div>
+            </div>
+            <!-- decorative tteobeokki picture V -->
+            <div style="flex: 1; overflow: hidden;">
+                <img src="images/circle_tteobeokki.png" style="transform: translate(10%, 1%); height: 40vw;">
+            </div>
+        </div>
+
+        <br/>
+
+        <!-- about us section V -->
+        <p id="about-title"> About Essel </p>
+        <div id="about-container">
+            <figure>
+                <img src="images/gimbap.jpg" class="about-pictures">
+                <figcaption class="captions"> 
+                    <p class="caption-headings"> Lorem ipsum </p>
+                    <br/> 
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Eget pulvinar nam; himenaeos ridiculus semper consectetur eleifend. Fringilla mollis placerat, eu netus augue felis taciti.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/chef.jpg" class="about-pictures">
+                <figcaption class="captions"> 
+                    <p class="caption-headings"> Lorem ipsum </p>
+                    <br/> 
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Eget pulvinar nam; himenaeos ridiculus semper consectetur eleifend. Fringilla mollis placerat, eu netus augue felis taciti.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/location.jpg" class="about-pictures">
+                <figcaption class="captions"> 
+                    <p class="caption-headings"> Lorem ipsum </p>
+                    <br/> 
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Eget pulvinar nam; himenaeos ridiculus semper consectetur eleifend. Fringilla mollis placerat, eu netus augue felis taciti.
+                </figcaption>                
+            </figure>
+        </div>
+
+        <!-- additional information V -->
+        <footer>
+            <div class="footer" style="margin-top:5%; background-color: #68856d; justify-content: space-between;">
+                <p style="justify-content: left;">
+                    &nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" id="delivery" name="special_features" value="delivery" checked="true" disabled="true">Open for delivery</label>
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" id="vegan_options" name="special_features" value="vegan_options" checked="true" disabled="true">Vegan options available</label>
+                </p>
+                <p style="justify-content: center;">
+                    Follow us on social media: 
+                    <br/>
+                    Instagram: <a href="https://www.instagram.com/essel.jkt/">@essel.jkt</a>
+                </p>
+                <p style="justify-content: right;">
+                    <label><input type="radio" id="korean" name="cuisine_type" value="korean" checked="true">Korean Cuisine&nbsp;&nbsp;&nbsp;</label>
+                    <br/>
+                    <label><input type="radio" id="chinese" name="cuisine_type" value="chinese" disabled="true">Chinese Cuisine&nbsp;&nbsp;&nbsp;</label>
+                </p>
+            </div>
+            <div class="footer" style="background-color: #ffef78; justify-content: center;">
+                <p>Copyright © 2024 Essel JKT. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
+
+

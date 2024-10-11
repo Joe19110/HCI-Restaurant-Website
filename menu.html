@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Essel JKT</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div style="width: 20%; height: 10vw;"><img src="images/logo.webp" style="height: 100%;"></div>
+            <nav style="width: 60%; display: flex; justify-content: center; align-items: center;">
+                <ul>
+                    <li class="nav-tab"><a href="index.html">Home</a></li>
+                    <li class="nav-tab"><a href="index.html#about-title">About</a></li>
+                    <li class="nav-tab" style="text-decoration: underline; text-decoration-color: #0c542c;">Menu</li>                
+                </ul>
+            </nav>
+            <div style="width: 20%; align-content: center; justify-content: right; padding-right: 1%;">
+                <a href="https://api.whatsapp.com/send/?phone=6282299007409&text&type=phone_number&app_absent=0">
+                    <div id="contact-button">Contact Us</div>
+                </a>
+            </div>
+        </header>         
+
+        <!-- embedded flipbook for virtual menu V-->
+        <div style="position: relative; padding-top: max(60%, 324px); width: 100%; height: 0;">
+            <iframe style="position: absolute; border: none; width: 100%; height: 100%; left: 0; top: 0;" src="https://online.fliphtml5.com/mmyph/wwyw/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+        </div>
+
+        <footer>
+            <div class="footer" style="background-color: #68856d; justify-content: space-between;">
+                <p style="justify-content: left;">
+                    &nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" id="delivery" name="special_features" value="delivery" checked="true" disabled="true">Open for delivery</label>
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" id="vegan_options" name="special_features" value="vegan_options" checked="true" disabled="true">Vegan options available</label>
+                </p>
+                <p style="justify-content: center;">
+                    Follow us on social media: 
+                    <br/>
+                    Instagram: <a href="https://www.instagram.com/essel.jkt/">@essel.jkt</a>
+                </p>
+                <p style="justify-content: right;">
+                    <label><input type="radio" id="korean" name="cuisine_type" value="korean" checked="true">Korean Cuisine&nbsp;&nbsp;&nbsp;</label>
+                    <br/>
+                    <label><input type="radio" id="chinese" name="cuisine_type" value="chinese" disabled="true">Chinese Cuisine&nbsp;&nbsp;&nbsp;</label>
+                </p>
+            </div>
+            <div class="footer" style="background-color: #ffef78; justify-content: center;">
+                <p>Copyright © 2024 Essel JKT. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
