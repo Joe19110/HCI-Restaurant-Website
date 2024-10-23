@@ -5,6 +5,7 @@ body {
   font-size: large;
   max-width: 100%;
   overflow-x: hidden;
+  padding: auto;
 }
 
 header {
@@ -12,6 +13,10 @@ header {
   background-color: white; 
   width: 100%; 
   height: fit-content; 
+}
+
+p {
+  margin-top: 1em;
 }
 
 ul {
@@ -99,6 +104,37 @@ a:hover {
   text-align: center;
 }
 
+#form-title {
+  font-size: 3vw;
+  text-align: center;
+  font-family: Roxborough;
+}
+
+.form-label {
+  font-size: max(1.2vw, 12px);
+}
+
+.form-text {
+  font-size: max(1vw, 10px);
+}
+
+.form-control {
+  height: max(2.3vw, 20px);
+  font-size: max(1.2vw, 12px);
+}
+
+#submit-button {
+  font-size: max(1.1vw, 11px);
+  width: max(10%, 13vw);
+}
+#whatsapp-link {
+  color: #68856d; 
+  text-decoration: underline;
+}
+
+#whatsapp-link:hover {
+  color: #fcdc64;
+}
 .about-pictures {
 	width: max(70%, 80px);
 	margin-bottom: 7%;
@@ -129,6 +165,7 @@ input {
   vertical-align: middle;
   position: relative;
 }
+
 @font-face {
   font-family: Fredoka;
   src: url(fonts/Fredoka.ttf);
