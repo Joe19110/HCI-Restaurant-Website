@@ -44,12 +44,16 @@ a:hover {
   padding: 10% 20px;
   font-size: max(1.3vw, 12px);
 }
+.nav-link.active {
+  text-decoration: underline;
+  text-decoration-color:black;
+}
 
-#contact-button {
+#reservation-button {
   float: right;
   border-radius: 25px;
   background: #547159;
-  padding: 5% 0px 7.5% 0px;
+  padding: 5% 0px 14% 0px;
   width: max(30%, 15vw);
   height: 10px;
   text-align: center;
@@ -157,6 +161,28 @@ a:hover {
   font-size: max(0.9vw, 7px);
   display: flex;
   align-items: center;
+}
+
+#faq-container {
+  width: 60%; 
+  justify-self: center; 
+  border: #0c542c; 
+  border-style: solid; 
+  border-radius: 25px; 
+  padding: 3%;
+}
+
+.questions {
+	padding: 2%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  background-color: #9EB3A1;
+  font-size: 1.2vw;
+}
+
+.answers {
+  display: none;
+  font-size: 1.2vw;
 }
 
 input {

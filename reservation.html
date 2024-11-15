@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <title>Essel JKT</title>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script>
-            function submitted() {
-                alert("Your reservation has been received.");
-            }
+            // sets current date and time as minimum reservation date
+            document.addEventListener("DOMContentLoaded", function() {
+                const dateInput = document.getElementById("date");
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const day = String(now.getDate()).padStart(2, '0');
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                
+                const minDateTime = `${year}-${month}-${day}T${hours}:${minutes}`;
+                
+                dateInput.setAttribute("min", minDateTime);
+            });
+            window.addEventListener("DOMContentLoaded", function() {
+                const form = document.getElementById("form");
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    alert("Your reservation has been received.");
+                }
+                });
+            });
         </script>
     </head>
     <body>
-        <header>
+        <header class="sticky-top">
             <!-- logo V -->
             <div style="width: 20%; height: 10vw;"><img src="images/logo.webp" style="height: 100%;"></div>
             <!-- navigation bar V -->
             <nav style="width: 60%; display: flex; justify-content: center; align-items: center;">
                 <ul>
                     <li class="nav-tab"><a href="index.html">Home</a></li>
-                    <li class="nav-tab"><a href="index.html#about-title">About</a></li>
-                    <li class="nav-tab"><a href="menu.html">Menu</a></li>               
+                    <li class="nav-tab"><a href="index.html#about">About</a></li>
+                    <li class="nav-tab"><a href="menu.html">Menu</a></li>  
+                    <li class="nav-tab"><a href="faq.html">FAQ</a></li>  
                 </ul>
             </nav>
-
         </header>
         
-        <form style="width: 60%; justify-self: center; border: #0c542c; border-style: solid; border-radius: 25px; padding: 3%;">
+        <!-- reservation form V -->
+        <form class="was-validated" id="form" style="width: 60%; justify-self: center; border: #0c542c; border-style: solid; border-radius: 25px; padding: 3%;">
             <h5 id="form-title" style="padding-bottom: 1%;"> Reservation Form </h5>
             <div class="mb-3">
                 <label for="name" class="form-label">Reservation name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
                 <div id="nameHelp" class="form-text">Your reservation will be set under this name.</div>
             </div>
             <div class="mb-3">
-                <label for="contact_number" class="form-label">Contact number</label>
-                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="numberHelp">
+                <label for="phone_number" class="form-label">Phone number</label>
+                <input type="number" class="form-control" id="number" aria-describedby="numberHelp" required>
                 <div id="numberHelp" class="form-text">We'll contact you through this number.</div>
               </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
               <div id="emailHelp" class="form-text">We'll contact you through this email.</div>
             </div>
             <div class="mb-3">
                 <label for="pax" class="form-label">No. of pax</label>
-                <input type="number" class="form-control" id="pax" aria-describedby="paxHelp" min="1" max="20">
+                <input type="number" class="form-control" id="pax" aria-describedby="paxHelp" min="1" max="20" required>
                 <div id="paxHelp" class="form-text">Enter the number of people under this reservation.</div>
             </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #68856d;" id="submit-button" onclick="submitted()">Submit</button>
+            <div class="mb-3">
+                <label for="date" class="form-label">Reservation time</label>
+                <input type="datetime-local" class="form-control" id="date" aria-describedby="dateHelp" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #68856d;" id="submit-button">Submit</button>
         </form>
-        <div style="width: 60%; justify-self: center;">
-            <p style="font-size: max(1.2vw, 12px);"> Any more questions? Contact us via <a href="https://api.whatsapp.com/send/?phone=6282299007409&text&type=phone_number&app_absent=0" id="whatsapp-link"> Whatsapp </a></p>
-        </div>
 
         <!-- additional information V -->
         <footer>
